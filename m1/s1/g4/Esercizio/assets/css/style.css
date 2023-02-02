@@ -175,4 +175,30 @@ button {
 
 /* ELEMENTI NELL' ASIDE */
 
+.articoli {
+    background: lightgray;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+.data {
+    text-align: right;
+}
+
 /* FOOTER */
+footer {
+    background-image: linear-gradient(0deg, #224444, #015566);
+    color: white;
+    text-align: center;
+    height: 150px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+address {
+    line-height: 1.5;
+}
+
+#mail {
+    color: fuchsia;
+}
