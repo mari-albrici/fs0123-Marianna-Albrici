@@ -25,10 +25,10 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: min-content;
-    margin: 0 auto;
+    height: inherit; /*calc(0.67*100vw)*/
+    margin-bottom: 10px;
+    padding-bottom: 50px;
     text-align: center;
-    padding: 10%;
 }
 
 h1 {
