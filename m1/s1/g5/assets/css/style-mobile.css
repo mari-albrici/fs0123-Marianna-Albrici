@@ -1,0 +1,177 @@
+/* GENERALI */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    text-align: center;
+}
+
+p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* HEADER */
+
+header {
+    background-color: black;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* ELEMENTI NEL MAIN */
+
+#title {
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: inherit; /*calc(0.67*100vw)*/
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.5;
+    padding-top: 25px;
+}
+
+#title p {
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+
+#button {
+    background-color: #f04c2f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.paragraph {
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.paragraph p {
+    padding-top: 10px;
+}
+
+h4 {
+    color: #25a2c3;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#pic_separator {
+    border-radius: 100%;
+    margin-top: 30px;
+}
+
+.pic {
+    max-width: 100%;
+}
+
+#quote {
+    background-color: #e22d0e;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+blockquote {
+    font-style: italic;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+h5 {
+    font-size: 1.6rem;
+}
+
+aside {
+    margin: 30px;
+}
+
+#articles {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.posts {
+    border: 1px solid #dee1e3;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+.posts p {
+    padding-top: 10px;
+}
+
+.posts a {
+    text-decoration: none;
+}
+
+.posts a:before {
+    color: #25a2c3;
+}
+
+.posts a:visited {
+    color: #25a2c3;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #25a2c3;
+    color: #c8e7f0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#footer_heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: white;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+
+footer a {
+    color: #c8e7f0;
+}
+
+#copyright {
+    font-size: 0.9rem;
+}
+
+i {
+    color: white;
+}
+
+hr {
+    width: 50%;
+    text-align: center;
+    border: 0.5px solid white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
