@@ -1,1 +1,8 @@
 /*EMPTY CSS - PLACEHOLDER*/
+
+button {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    margin: 20px;
+}
