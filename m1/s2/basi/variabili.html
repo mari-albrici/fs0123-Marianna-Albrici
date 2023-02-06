@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabili</title>
+</head>
+
+<body>
+
+    <script>
+
+        //sono contenitori di dati, come numeri e stringhe
+
+        //il nome della variabile (identificativo) non può iniziare con nulla se non lettere, $ o _ 
+        //il nome viene deciso da noi e deve avere un senso oltre che essere facilmente riconoscibile 
+        //quello che c'è dopo l'identificativo si chiama 
+
+        var number = 5;
+
+        //il nome della variabili non possono avere spazi o - al posto degli spazi (non vengono accettati). Il _ verrebbe accettato, ma è meglio usare la notazione CamelCase, ovvero le parole dopo la prima iniziano con la lettera maiuscola
+
+        var userName = 'Mario';
+
+        //ci sono alcune parole chiave che sono riservate per il linguaggio: var, const, let, function, return, if, else, this, switch, while, do ,for, case, class, true, false, extends, null, break, continue, default, new, super
+
+        console.log(number, userName);
+
+        // le variabili possono essere riassegnate
+
+        numero = 8;
+        console.log(number);
+
+        /* Tipi di dato:
+        JS è debolmente tipizzato, il tipo di dato può cambiare
+
+        string -> '' oppure "" 
+
+        number -> valore numerico senza virgolette 
+
+        boolean -> true oppure false 
+
+        array ->  [] 
+
+        object -> {} 
+
+        */
+
+        var a = 2;
+        var b = 30;
+        var c = a + b;
+
+        console.log(c, a * b)
+
+        /* Operatori aritmetici
+        
+        + -> somma
+        / -> divisione
+        * -> moltiplicazione
+        - -> sottrazione 
+        
+        valgono le classice regole di priorità nelle operazioni aritmetiche
+
+        */
+
+
+
+
+    </script>
+</body>
+
+</html>
