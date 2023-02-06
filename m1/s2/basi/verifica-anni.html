@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age checker</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        var anni = prompt('Quanti anni hai?');
+
+        console.log(anni);
+
+        if(Number(anni) == NaN){
+
+            if(anni >= 18 && anni <= 110){
+                document.write('Accesso consentito')
+            } else if(anni > 110){
+                document.write('Accesso negato - <b>antichità</b> non riconosciuta')
+            } else {
+                document.write('Accesso negato')
+            }
+
+        }else{
+            document.write('Ammessi solo numeri')
+        }
+
+        /*
+        
+        > maggiore di 
+        < minore di 
+        >= superiore o uguale
+        <= inferiore o uguale
+
+        && aggiunge un'altra condizione
+        
+        */
+
+    </script>
+
+</body>
+
+</html>
