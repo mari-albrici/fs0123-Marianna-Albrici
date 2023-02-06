@@ -11,36 +11,23 @@
 <body>
 
     <script>
+        var anni = prompt('Quanti anni hai?')
 
+        console.log(anni)
 
-        var anni = prompt('Quanti anni hai?');
-
-        console.log(anni);
-
-        if(Number(anni) == NaN){
-
-            if(anni >= 18 && anni <= 110){
+        if (Number(anni)) {
+             if (anni >= 18 && anni <= 110) {
                 document.write('Accesso consentito')
-            } else if(anni > 110){
-                document.write('Accesso negato - <b>antichità</b> non riconosciuta')
-            } else {
-                document.write('Accesso negato')
-            }
+            }else if(anni >110){
+            document.write('Acceso negato - antichità non riconosciuta')
+            }else {
+            document.write('Accesso negato')
+         } 
 
-        }else{
-            document.write('Ammessi solo numeri')
+        } else {
+            document.write('Inserire solo valori numerici')
         }
-
-        /*
-        
-        > maggiore di 
-        < minore di 
-        >= superiore o uguale
-        <= inferiore o uguale
-
-        && aggiunge un'altra condizione
-        
-        */
+       
 
     </script>
 
