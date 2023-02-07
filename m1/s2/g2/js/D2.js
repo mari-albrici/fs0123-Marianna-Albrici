@@ -11,25 +11,37 @@ REGOLE
  Elenca e descrivi i principali datatype in JavaScript. Prova a spiegarli come se volessi farli comprendere a un bambino.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA 
+String: rappresenta del testo. Possono essere anche SVGAnimatedNumberList, ma non hanno valore.
+Number: indica dei numeri con i rispettivi valori
+Boolean: dato che può essere solo vero o falso
+undefined
+null
+*/
 
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA 
+var name = 'Marianna'
+*/
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA 
+console.log(12 + 20)
+*/
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA 
+var x = 12
+*/
 
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
