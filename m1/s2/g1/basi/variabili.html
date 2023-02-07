@@ -68,7 +68,7 @@
         var name = 'Mario';
         var salutation = 'Ciao';
 
-        console.log(salutation + ' ' +  name);
+        console.log(salutation + ' ' + name);
 
         /*
         PARKOUR - operazioni tra dati diversi
@@ -81,8 +81,145 @@
         console.log(num * strNum); //la stringa si converte in numero, perchè il moltiplicatore ha solo quella funzione, diversamente dal '+' ( / funziona uguale)
         console.log(num * '10a'); //NaN -> Not a Number - non riesce a fare il calcolo perché c'è una lettera
 
-        console.log( typeof num ); //indica il tipo di dato della variabile indicata
-        console.log( typeof strNum );
+        console.log(typeof num); //indica il tipo di dato della variabile indicata
+        console.log(typeof strNum);
+
+        // 07.02.2023 - Day 2
+
+        var a; //variabile dichiarata - undefined
+        console.log(a);
+
+        //hoisting: le funzioni possono essere utilizzate prima di essere dichiarate, VSCode va a cercare la funzione a CMD+C e CMD+V per utilizzarla dove serve. L'hoisting delle variabili in JS non coinvolge il valore, ma solo l'esistenza del valore.
+
+        console.log(a);
+        var a = 5;
+        console.log(a);
+
+        a = 9; //riassegnazione del valore della variabile SENZA RISCRIVERE VAR
+        console.log(a)
+
+        //valori numeri: numeri interi o numeri decimali scritti con il punto e non la virgola 
+
+        var a = 10;
+        var b = a;
+        var c = a + b; //al variare di a non varia anche b, in quanto viene presa un'instantanea del valore e il valore di b è 10. Si può riassegnare in seguito, ma in quel caso non cambia quello scritto prima. 
+
+        //INTERPOLAZIONE o TEMPLATE STRING
+        var nome = 'Mario';
+        var anni = 30;
+        var luogo = 'Roma';
+
+        document.write('Nome: ' + nome + ', anni: ' + anni + ', luogo di nascita: ' + luogo);
+
+        document.write(`<br> Nome: ${nome}, anni: ${anni}, luogo di nascita: ${luogo}`);
+
+
+        //LET 
+        /* La differenza sta nel raggio d'azione della variabile, in quanto le LET hanno un Block Scope (visibilità, accessibilità)
+
+        Un blocco viene rappresentato tramite le {}. 
+        Se una variabile var nasce nel blocco, la variabile è disponibile dentro e fuori dal blocco.
+        Se una variabile let nasce nel blocco, la variabile è disponibile SOLO DENTRO il blocco. 
+        */
+
+        {
+            var a = 0; //non soggetta a blockscope
+            console.log(a);
+        }
+        console.log(a);
+
+        {
+            let b = 1;
+            console.log(b);
+        }
+
+        //console.log(b) Uncaught ReferenceError: b is not defined
+
+        {
+            let b = 1;
+            console.log(b);
+        }
+
+        var c = 2;
+        {
+            let c = 3;
+            console.log(c) // fa riferimento alla let della riga 145
+        }
+        console.log(c) // fa riferimento alla variabile della riga 143
+
+        //Esempio
+
+        let condizione = true;
+        let numero; //inizalizzo fuori dal blocco
+        if(condizione){
+            numero = 90;// valorizzo nel blocco
+        }else{
+            numero = 50;// valorizzo nel blocco
+        }
+
+        console.log(numero);
+
+        //CONST - non possono essere riassegnate e possono essere limitate dalla Block Scope come la LET 
+
+        const D =4;
+
+        //Per convenzione i nomi delle const vengono dati tutti in MAIUSCOLO (KebabCase). D = 9 -> Assignment to constant variable
+
+        const NOME_DELLA_COSTANTE = 1;
+
+        // valori interni
+        const OGGETTO = {
+            nome:'Mario',
+            cognome:'Rossi'
+        } 
+
+        //Object.freeze(OGGETTO) => posso "congelare" l'oggetto così che non venga modificato
+        OGGETTO.nome = 'Marco';
+
+        //DATATYPE JS
+
+        /* Tipizzazione: distinzione dei diversi tipi di dati utilizzati nel codice. Segue regole differenti nei linguaggi di programmazione. Può essere statica o dinamica; in quella satica una variabile rimane strettamente legata al tipo di valore assegnato. */
+
+        null //keyword utilizzata per segnalare l'assenza intenzionale di un oggetto.
+        undefined //proprietà che indica che una variabile non ha un valore assegnato oppure non è definita. 
+
+        /* OPERATORI LOGICI E DI COMPARAZIONE E DI ASSEGNAZIONE
+
+        =
+        += Somma e/o concatena quello che c'è dopo = a quello che era già stato assegnato alla variabile => è una RIASSEGNAZIONE
+        -= Sottrae 
+
+        */
+
+        let anni = 30; // il singolo = ASSEGNA alla LET il valore, il doppio = viene usato per la comparazione.
+
+        console.log(30 < 18); //la risposta sarà FALSE
+        console.log(30 > 18); //la risposta sarà TRUE 
+        console.log(18 > 18); //la risposta sarà FALSE (non è compreso)
+        console.log(18 >= 18); //la risposta sarà TRUE (non è superiore, ma è uguale)
+        console.log(18 <= 18); //la risposta sarà TRUE (non è inferiore, ma è uguale)
+        console.log(18 == 18); //la risposta sarà TRUE (è uguale)
+        console.log(18 != 18); //la risposta sarà FALSE (non sono diversi)
+
+        console.log(anni == '30'); //la risposta sarà TRUE (avviene una conversione e una comparazione, viene valutato il dato e non il tipo di dato)
+        console.log(anni === '30'); //la risposta sarà FALSE (viene valutato sia il tipo di dato che il valore del dato)
+
+        // !==  -> devono essere differenti il tipo di dato e/o il valore del dato
+
+        console.log(anni >= 18 && anni <= 110); //&& restituirà TRUE solo se ENTRAMBRE le definizioni sono vere (possono essere più di due comparazioni)
+        console.log(anni >= 18 || anni <= 110); //|| restituità TRUE se almeno una delle due è vera
+
+        console.log(!true); //viene usato per invertire il risultato booleano -> in console è FALSE 
+        console.log(!(anni >= 18 && anni <= 110)); //la risposta sarà FALSE
+
+        // typeof restituisce il tipo di dato
+
+        //OPERATORE TERNARIO
+
+        let controllo = (anni >= 18) ? 'Sei maggiorenne' : 'Sei minorenne' // ? è if e : è else
+        console.log(controllo);
+
+        //ESCAPE => per non confondere apostrofi e backslash nelle stringhe, va aggiunto uno\ var stringa = 'l'\esempio di stringa' OPPURE var stringa = 'Questo \\ è un backslash'
 
 
     </script>
