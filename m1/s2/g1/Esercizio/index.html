@@ -12,15 +12,19 @@
 
 <body>
 
-    <button onclick="petRecall">Your pet</button>
+    <button id="button">Your pet</button>
 
-    <script> /*Script interno
-        let animal = 'petPet'
-        const petPet = { type: 'cat' };
+    <script> /*Script interno*/
+        let animal = 'pet'
+        const pet = { type: 'cat' };
+
+        document.getElementById("button").onclick = function () { alert('pet'); };
+
+            /*
         function petRecall () {
             alert('petPet.type')
-        };
-        */
+        };  */
+        
     </script>
     <script src="js/index.js"></script>
     <script src="js/naming.js"></script>
