@@ -1,3 +1,6 @@
+// DISCLAIMER: esercizi commentati per evitare conflitti e per un prompt noioso :)
+
+
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
