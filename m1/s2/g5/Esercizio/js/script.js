@@ -1,3 +1,4 @@
+//creazione dell'oggetto Calcolatrice in cui inserire le funzioni
 class Calculator {
     constructor(previousTextElement, currentTextElement) {
         this.previousTextElement = previousTextElement
@@ -5,21 +6,29 @@ class Calculator {
         this.clear()
     }
 
+
+    //funzione per cancellare tutto
     clear() {
         this.currentOperation = ''
         this.previousOperation = ''
         this.operation = undefined
     }
 
+
+    //funzione per cancellare una sola cifra dal display
     delete() {
         this.currentOperation = this.currentOperation.toString().slice(0, -1)
     }
 
+
+    //funzione per aggiungere numeri senza effettuare operazioni (aka concatenazione di numeri come stringhe)
     addNumber(number) {
         if (number === '.' && this.currentOperation.includes('.')) return
         this.currentOperation = this.currentOperation.toString() + number.toString()
     }
 
+
+    //funzione per scegliere quale operatore matematico usare
     chooseOperation(operation) {
         if (this.currentOperation === '') return
         if (this.previousOperation !== '') {
@@ -30,6 +39,8 @@ class Calculator {
         this.currentOperation = ''
     }
 
+
+    //funzione per effettuare effetivamente i calcoli
     calculate() {
         let calculation
         const prev = parseFloat(this.previousOperation)
@@ -51,12 +62,6 @@ class Calculator {
             case '%':
                 calculation = prev * current / 100
                 break
-            case '√':
-                calculation = Math.sqrt(current, current)
-                break
-            case 'x^':
-                calculation = Math.pow(prev, current)
-                break
             default:
                 return
         }
@@ -65,6 +70,7 @@ class Calculator {
         this.previousOperation = ''
     }
 
+    //funzione per mostrare i numeri nel modo corretto a display
     getDisplayNumber(number) {
         const stringNumber = number.toString()
         const numeriInteri = parseFloat(stringNumber.split('.')[0])
@@ -82,6 +88,8 @@ class Calculator {
         }
     }
 
+
+    //funzione per aggiornare il display dopo un'operazione o delete/cancella
     updateDisplay() {
         this.currentTextElement.innerText =
             this.getDisplayNumber(this.currentOperation)
@@ -94,7 +102,7 @@ class Calculator {
     }
 }
 
-
+//definizione delle variabili per il funzionamento della calcolatrice 
 const numberButtons = document.querySelectorAll('[data-number]')
 const operationButtons = document.querySelectorAll('[data-operation]')
 const equalsButton = document.querySelector('[data-equals]')
@@ -105,6 +113,8 @@ const currentTextElement = document.querySelector('[data-current]')
 
 const calculator = new Calculator(previousTextElement, currentTextElement)
 
+
+//richiamo ai tasti numerici
 numberButtons.forEach(function(button) {
     button.addEventListener('click', () => {
         calculator.addNumber(button.innerText)
@@ -112,6 +122,7 @@ numberButtons.forEach(function(button) {
     })
 })
 
+//richiamo ai tasti degli operatori
 operationButtons.forEach(function(button) {
     button.addEventListener('click', function() {
         calculator.chooseOperation(button.innerText)
@@ -119,16 +130,20 @@ operationButtons.forEach(function(button) {
     })
 })
 
+
+//richiamo al tasto = 
 equalsButton.addEventListener('click', function() {
     calculator.calculate()
     calculator.updateDisplay()
 })
 
+//richiamo al tasto AC
 allClearButton.addEventListener('click', function() {
     calculator.clear()
     calculator.updateDisplay()
 })
 
+//richiamo al tasto DEL 
 deleteButton.addEventListener('click', function() {
     calculator.delete()
     calculator.updateDisplay()
