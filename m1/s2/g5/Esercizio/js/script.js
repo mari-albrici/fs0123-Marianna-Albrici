@@ -99,31 +99,31 @@ const currentTextElement = document.querySelector('[data-current]')
 
 const calculator = new Calculator(previousTextElement, currentTextElement)
 
-numberButtons.forEach(button => {
+numberButtons.forEach(function(button) {
     button.addEventListener('click', () => {
         calculator.addNumber(button.innerText)
         calculator.updateDisplay()
     })
 })
 
-operationButtons.forEach(button => {
-    button.addEventListener('click', () => {
+operationButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
         calculator.chooseOperation(button.innerText)
         calculator.updateDisplay()
     })
 })
 
-equalsButton.addEventListener('click', () => {
+equalsButton.addEventListener('click', function() {
     calculator.compute()
     calculator.updateDisplay()
 })
 
-allClearButton.addEventListener('click', () => {
+allClearButton.addEventListener('click', function() {
     calculator.clear()
     calculator.updateDisplay()
 })
 
-deleteButton.addEventListener('click', () => {
+deleteButton.addEventListener('click', function() {
     calculator.delete()
     calculator.updateDisplay()
 })
