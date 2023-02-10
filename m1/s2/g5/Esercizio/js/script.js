@@ -30,20 +30,20 @@ class Calculator { //elenco delle caratteristiche dell'oggetto Calcolatrice
 
     //funzione per scegliere quale operatore matematico usare
     chooseOperation(operation) {
-        if (this.currentOperation === '') return
-        if (this.previousOperation !== '') {
+        if (this.currentOperation === '') return //se è vuoto ritorna nulla 
+        if (this.previousOperation !== '') { //se non è vuoto, va alla funzione di calcolo per trovare il risultato
             this.calculate()
         }
-        this.operation = operation
-        this.previousOperation = this.currentOperation
-        this.currentOperation = ''
+        this.operation = operation //mostra il risultato dell'operazione
+        this.previousOperation = this.currentOperation 
+        this.currentOperation = '' //svuota il display
     }
 
 
     //funzione per effettuare effetivamente i calcoli
     calculate() {
         let calculation
-        const prev = parseFloat(this.previousOperation)
+        const prev = parseFloat(this.previousOperation) //trasforma numeri in strighe
         const current = parseFloat(this.currentOperation)
         if (isNaN(prev) || isNaN(current)) return
         switch (this.operation) {
@@ -65,9 +65,9 @@ class Calculator { //elenco delle caratteristiche dell'oggetto Calcolatrice
             default: //ho provato ad aggiungere altre funzioni come √, x^ o log, ma non riuscivo a farle funzionare nel modo corretto dovendo usare entrambi i termini dell'operazione
                 return
         }
-        this.currentOperation = calculation
-        this.operation = undefined
-        this.previousOperation = ''
+        this.currentOperation = calculation //da il risultato dell'operazione 
+        this.operation = undefined //Svuota il campo dell'operatore matematico
+        this.previousOperation = '' 
     }
 
     //funzione per mostrare i numeri nel modo corretto a display
@@ -76,15 +76,15 @@ class Calculator { //elenco delle caratteristiche dell'oggetto Calcolatrice
         const numeriInteri = parseFloat(stringNumber.split('.')[0])
         const numeriDecimali = stringNumber.split('.')[1]
         let numeriDisplay
-        if (isNaN(numeriInteri)) {
+        if (isNaN(numeriInteri)) { //se non è un numero, ritorna nulla
             numeriDisplay = ''
         } else {
-            numeriDisplay = numeriInteri.toLocaleString('eu', { maximumFractionDigits: 0 })
+            numeriDisplay = numeriInteri.toLocaleString('eu', { maximumFractionDigits: 0 }) //corretta visualizzazione delle migliaia
         }
         if (numeriDecimali != null) {
-            return `${numeriDisplay}.${numeriDecimali}`
+            return `${numeriDisplay}.${numeriDecimali}` //concatenazione dei numeri per aggiungere la virgola
         } else {
-            return numeriDisplay
+            return numeriDisplay //per i numeri interi
         }
     }
 
