@@ -23,38 +23,44 @@ class Calculator {
     chooseOperation(operation) {
         if (this.currentOperation === '') return
         if (this.previousOperation !== '') {
-            this.compute()
+            this.calculate()
         }
         this.operation = operation
         this.previousOperation = this.currentOperation
         this.currentOperation = ''
     }
 
-    compute() {
-        let computation
+    calculate() {
+        let calculation
         const prev = parseFloat(this.previousOperation)
         const current = parseFloat(this.currentOperation)
         if (isNaN(prev) || isNaN(current)) return
         switch (this.operation) {
             case '+':
-                computation = prev + current
+                calculation = prev + current
                 break
             case '-':
-                computation = prev - current
+                calculation = prev - current
                 break
             case 'x':
-                computation = prev * current
+                calculation = prev * current
                 break
             case '÷':
-                computation = prev / current
+                calculation = prev / current
                 break
             case '%':
-                computation = prev / current * 100
+                calculation = prev * current / 100
+                break
+            case '√':
+                calculation = Math.sqrt(current, current)
+                break
+            case 'x^':
+                calculation = Math.pow(prev, current)
                 break
             default:
                 return
         }
-        this.currentOperation = computation
+        this.currentOperation = calculation
         this.operation = undefined
         this.previousOperation = ''
     }
@@ -114,7 +120,7 @@ operationButtons.forEach(function(button) {
 })
 
 equalsButton.addEventListener('click', function() {
-    calculator.compute()
+    calculator.calculate()
     calculator.updateDisplay()
 })
 
