@@ -1,6 +1,6 @@
-//creazione dell'oggetto Calcolatrice in cui inserire le funzioni
-class Calculator {
-    constructor(previousTextElement, currentTextElement) {
+//creazione constructor con le funzioni necessarie per far funzionare la calcolatrice (-> richiamata più in fondo)
+class Calculator { //elenco delle caratteristiche dell'oggetto Calcolatrice
+    constructor(previousTextElement, currentTextElement) { //elementi principali della calcolatrice
         this.previousTextElement = previousTextElement
         this.currentTextElement = currentTextElement
         this.clear()
@@ -111,11 +111,13 @@ const allClearButton = document.querySelector('[data-all-clear]')
 const previousTextElement = document.querySelector('[data-previous]')
 const currentTextElement = document.querySelector('[data-current]')
 
+
+//creazione vera e proprio dell'oggetto calcolatrice
 const calculator = new Calculator(previousTextElement, currentTextElement)
 
 
 //richiamo ai tasti numerici
-numberButtons.forEach(function(button) {
+numberButtons.forEach(function (button) {
     button.addEventListener('click', () => {
         calculator.addNumber(button.innerText)
         calculator.updateDisplay()
@@ -123,28 +125,27 @@ numberButtons.forEach(function(button) {
 })
 
 //richiamo ai tasti degli operatori
-operationButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
+operationButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
         calculator.chooseOperation(button.innerText)
         calculator.updateDisplay()
     })
 })
 
-
 //richiamo al tasto = 
-equalsButton.addEventListener('click', function() {
+equalsButton.addEventListener('click', function () {
     calculator.calculate()
     calculator.updateDisplay()
 })
 
 //richiamo al tasto AC
-allClearButton.addEventListener('click', function() {
+allClearButton.addEventListener('click', function () {
     calculator.clear()
     calculator.updateDisplay()
 })
 
 //richiamo al tasto DEL 
-deleteButton.addEventListener('click', function() {
+deleteButton.addEventListener('click', function () {
     calculator.delete()
     calculator.updateDisplay()
 })
