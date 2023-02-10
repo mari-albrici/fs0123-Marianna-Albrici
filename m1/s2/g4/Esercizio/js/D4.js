@@ -126,8 +126,8 @@ console.log(characters);
   {name: Leia Organa, hair_color: "brown", eye_color: "brown"}
 */
 
-let femaleCharacters = {}
-/*femaleCharacters.push({
+let femaleCharacters = {};
+femaleCharacters.push({
   name: 'Leia Organa', 
   hair_colour: 'brown', 
   eye_color: 'brown'
@@ -254,4 +254,9 @@ console.log(characters);
 Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
 */
 
+let nomeCasuale = starWarsCharacters.indexOf(function(random){
+  nomeCasuale = arr[Math.floor(Math.random() * starWarsCharacters.length)]
+})
+
+let descrizione = `Il nome del personaggio è ${name}, la sua altezza è ${height}, la sua massa equivale a ${mass}, i suoi capelli sono ${hair_color}, ha la pelle ${skin_color}, gli occhi ${eye_color}, nasce il ${birth_year}, si identifica come ${gender}.`
 
