@@ -23,14 +23,14 @@ class Calculator { //elenco delle caratteristiche dell'oggetto Calcolatrice
 
     //funzione per aggiungere numeri senza effettuare operazioni (aka concatenazione di numeri come stringhe)
     addNumber(number) {
-        if (number === '.' && this.currentOperation.includes('.')) return
+        if (number === '.' && this.currentOperation.includes('.')) {return}
         this.currentOperation = this.currentOperation.toString() + number.toString()
     }
 
 
     //funzione per scegliere quale operatore matematico usare
     chooseOperation(operation) {
-        if (this.currentOperation === '') return //se è vuoto ritorna nulla 
+        if (this.currentOperation === '') {return} //se è vuoto ritorna nulla 
         if (this.previousOperation !== '') { //se non è vuoto, va alla funzione di calcolo per trovare il risultato
             this.calculate()
         }
@@ -43,9 +43,9 @@ class Calculator { //elenco delle caratteristiche dell'oggetto Calcolatrice
     //funzione per effettuare effetivamente i calcoli
     calculate() {
         let calculation
-        const prev = parseFloat(this.previousOperation) //trasforma numeri in strighe
+        const prev = parseFloat(this.previousOperation) //trasforma stringhe in numeri
         const current = parseFloat(this.currentOperation)
-        if (isNaN(prev) || isNaN(current)) return
+        if (isNaN(prev) || isNaN(current)) {return}
         switch (this.operation) {
             case '+':
                 calculation = prev + current
@@ -65,7 +65,7 @@ class Calculator { //elenco delle caratteristiche dell'oggetto Calcolatrice
             default: //ho provato ad aggiungere altre funzioni come √, x^ o log, ma non riuscivo a farle funzionare nel modo corretto dovendo usare entrambi i termini dell'operazione
                 return
         }
-        this.currentOperation = calculation //da il risultato dell'operazione 
+        this.currentOperation = calculation //mostra il risultato dell'operazione 
         this.operation = undefined //Svuota il campo dell'operatore matematico
         this.previousOperation = '' 
     }
