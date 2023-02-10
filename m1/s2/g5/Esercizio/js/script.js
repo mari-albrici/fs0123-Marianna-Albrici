@@ -62,7 +62,7 @@ class Calculator {
             case '%':
                 calculation = prev * current / 100
                 break
-            default:
+            default: //ho provato ad aggiungere altre funzioni come √, x^ o log, ma non riuscivo a farle funzionare nel modo corretto dovendo usare entrambi i termini dell'operazione
                 return
         }
         this.currentOperation = calculation
