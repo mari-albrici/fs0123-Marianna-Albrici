@@ -1,4 +1,4 @@
-// Esercizi aggiuntivi (facoltativi) per D4
+// Esercizi aggiuntivi (facoltativi) per D6
 
 /* EXTRA 1
  Scrivi una funzione chiamata "checkArray" che riceve un array di numeri casuali (creati con la funzione "giveMeRandom") e per ogni elemento stampa in console
@@ -7,6 +7,8 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
 
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".

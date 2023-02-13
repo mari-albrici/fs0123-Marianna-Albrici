@@ -117,9 +117,9 @@ console.log(reverseString('Epicode'));
 /* SCRIVI QUI LA TUA RISPOSTA */
 let upperFirst = (string) => {
     return string
-    .split(' ')
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
+        .split(' ')
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
 }
 
 console.log(upperFirst('web developer full stack'));
@@ -132,7 +132,7 @@ console.log(upperFirst('web developer full stack'));
 /* SCRIVI QUI LA TUA RISPOSTA */
 let cutString = (string) => {
     return string
-    .slice(1, string.length - 1)
+        .slice(1, string.length - 1)
 }
 
 console.log(cutString('Epicode'));
@@ -143,10 +143,13 @@ console.log(cutString('Epicode'));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let giveMeRandom = (n) => {
-    nArray = Math.random(n) * 10
-    return nArray 
+function giveMeRandom(n){
+    let numero = []
+    for (i = 0; i < n; i++) {
+     numero.push(Math.floor(Math.random() * 11))
+    }
+    return numero
 }
 
-
-console.log(giveMeRandom(4));
+console.log(giveMeRandom(2));
+console.log(giveMeRandom(7));
