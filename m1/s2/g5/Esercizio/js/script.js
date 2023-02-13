@@ -1,4 +1,4 @@
-//creazione constructor con le funzioni necessarie per far funzionare la calcolatrice (-> richiamata più in fondo)
+//creazione costruttore con le funzioni necessarie per far funzionare la calcolatrice (-> richiamata più in fondo)
 class Calculator { //elenco delle caratteristiche dell'oggetto Calcolatrice
     constructor(previousTextElement, currentTextElement) { //elementi principali della calcolatrice
         this.previousTextElement = previousTextElement
