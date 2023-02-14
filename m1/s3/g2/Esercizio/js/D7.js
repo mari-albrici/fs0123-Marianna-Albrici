@@ -122,6 +122,23 @@ console.log(evenDeletion());
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 10 (incluso), SENZA AMMETTERE DUPLICATI.
  */
 
+let casualNumbers = () => {
+
+  let numbers = []
+
+  while (numbers.length < 10) {
+    let randomNumber = Math.floor(Math.random() * 11)
+
+    if (!numbers.includes(randomNumber)) {
+      numbers.push(randomNumber);
+    }
+  }
+  return numbers
+}
+
+console.log(casualNumbers());
+
+
 /* ESERCIZIO 11 (EXTRA)
   Scrivi un algoritmo in grado di invertire un array.
   es: [1, 3, 5] ==> [5, 3, 1]
@@ -306,22 +323,25 @@ console.log(youngerMovies());
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
-let getMovie = () => {
-  let imbdID = movies[i].imdbID 
-  
-  for (i = 0)
+let getMovie = (p) => {
+
+  find = movies.filter(movie => movie.imdbID == p)
+
+  return find
 }
+
+console.log(getMovie('tt0167261'))
 
 /* ESERCIZIO 17
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
 
-function movieYearsTotal(){
-  let years =[]
-  for(i=0; i<movies.length; i++){
+function movieYearsTotal() {
+  let years = []
+  for (i = 0; i < movies.length; i++) {
     years.push(Number(movies[i].Year))
   }
-  let sum = years.reduce((p,n) => p+n) 
+  let sum = years.reduce((p, n) => p + n)
   return sum
 }
 console.log(movieYearsTotal())
