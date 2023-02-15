@@ -1,0 +1,48 @@
+body {
+    margin: 0 auto;
+    background-image: linear-gradient(65deg, #8EC5FC 0%, #E0C3FC 100%);
+    background-repeat: no-repeat;
+    font-family: 'Handlee', cursive;
+}
+
+
+h1 {
+    font-size: 3rem;
+    color: #166088;
+    margin-top: 50px;
+    text-align: center;
+}
+
+div {
+    margin: 50px;
+    display: flex;
+}
+
+button {
+    height: 40px;
+    width: 60px;
+    border-radius: 30px;
+    border: 2px solid white;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+button:hover {
+    background: #8EC5FC;
+}
+
+button:active {
+    border: 3px solid #166088;
+}
+
+input {
+    font-size: 1.5rem;
+    color: #166088;
+    border-radius: 50px;
+    border: 0.5px solid grey;
+    padding-left: 30px;
+}
+
+li {
+    list-style-type: circle;
+}

@@ -7,16 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="to-do-list" content="To do list">
     <title>To do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    
-    <input name="todo" id="input" placeholder="write todo" />
-    <ul id="todo-list" onclick="remove()"></ul>
-    <button onclick="addtodo()">Add Todo</button>
+
+    <h1>To Do list</h1>
+    <div>
+
+        <input id="input" placeholder="Write your first task" />
+
+        <button id="plusButton"> + </button>
+
+        <button id="deleteButton"> 🗑️ </button>
+
+        <ul id="todo-list">
+
+        </ul>
+
+    </div>
 
     <script src="js/scriptv2.js"> </script>
 </body>

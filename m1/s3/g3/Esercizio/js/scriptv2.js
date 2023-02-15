@@ -1,70 +1,39 @@
-//CODICE NON TERMINATO - STIAMO ANALIZZANDO LA LOGICA di un esempio già creato online
+//CODICE NON TERMINATO - STIAMO cercando di capirci qualcosa senza copiare da nessuna parte
 
 class MakeTodoList {
     constructor(list) {
-      this.todoList = list;
-      this.todos = [];
+        this.todoList = list
     }
-  
-    static addToList(text) {
-      let list = document.getElementById("todo-list");
-      let task = document.createElement("li");
-      task.textContent = text;
-      list.appendChild(task);
-      return task;
+
+    addToList(content) {
+        let list = document.getElementById('todo-list')
+        let task = document.createElement('li')
+        task.textContent = content
+        list.appendChild(task)
     }
-  
-    static removeFromList(text) {
-      let list = document.getElementById("todo-list");
-      let childs = Array.from(list.childNodes);
-      let item = childs.find(i => i.innerText === text);
-      return item;
+
+    removeFromList(text) {
+        let li = document.getElementById('li')
+        let updated = document.getElementById('todo-list')
+        updated.onclick = listEle.removeFromList(li.innerText)
     }
-  
-    addToDo(text) {
-      this.todos.push(text);
-      this.todoList.appendChild(MakeTodoList.addToList(text));
+
+    addToDo() {
+        let content = document.getElementById('input').value
+        listEle.addToList(content)
     }
-  
+
     deleteToDo(text) {
-      let filter = this.todos.filter(i => i !== text);
-      this.todoList.removeChild(MakeTodoList.removeFromList(text));
-      this.todos = filter;
+        
     }
-  
-    get getList() {
-      return this.todos;
-    }
-
-  }
+}
 
 
-  let list = document.getElementById("todo-list");
 
-    // create a object of Class
+let list = document.getElementById("todo-list")
 
-    let listEle = new MakeTodoList(list);
+let plusButton = document.getElementById("plusButton")
 
-    // add something to list
+let listEle = new MakeTodoList(list)
 
-    function addToDo() {
-      let input = document.getElementById("input").value;
-      listEle.addToDo(input); //  calling method from class
-    }
-
-    // simple utility function
-
-    function getEventTarget(e) {
-      e = e || window.event;
-      return e.target || e.srcElement;
-    }
-
-    // delete some item from list
-
-    function remove() {
-      let updated = document.getElementById("todo-list");
-      updated.onclick = function(event) {
-        var target = getEventTarget(event);
-        listEle.deleteToDo(target.innerText);
-      };
-    }
+plusButton.addEventListener('click', () => listEle.addToDo())
