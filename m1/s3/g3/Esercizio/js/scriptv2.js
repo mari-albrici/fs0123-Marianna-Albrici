@@ -1,3 +1,5 @@
+//CODICE NON TERMINATO - STIAMO ANALIZZANDO LA LOGICA di un esempio già creato online
+
 class MakeTodoList {
     constructor(list) {
       this.todoList = list;
