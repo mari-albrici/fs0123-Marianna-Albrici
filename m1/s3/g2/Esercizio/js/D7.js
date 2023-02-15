@@ -349,3 +349,4 @@ console.log(movieYearsTotal())
 /* ESERCIZIO 18 (EXTRA)
   Scrivi una funzione per recuperare tutti i film dall'array fornito che contengono una parola fornita.
 */
+
