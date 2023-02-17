@@ -185,11 +185,15 @@ console.log(rollTheDices(3));
 */
 let howManyDays = (date) => {
   let today = new Date()
-  let difference = (today.getTime() - date.getTime())/ (1000 * 60 * 60 * 24)
-  return Math.round(difference);
-  }
+  let oldDay = new Date(date)
+  let difference = (today.getTime() - oldDay.getTime()) / (1000 * 60 * 60 * 24)
+  return Math.ceil(difference)
+}
 
-console.log(16/02);
+console.log(howManyDays('2023/02/16'));
+console.log(howManyDays('2023/01/01'));
+console.log(howManyDays('2022/02/17'));
+
 
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
@@ -368,7 +372,7 @@ console.log(newestMovie());
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
 
-let movieNumber = movies.length
+let movieNumber = () => movies.length
 
 console.log(movieNumber);
 
