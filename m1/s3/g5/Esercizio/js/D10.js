@@ -368,13 +368,15 @@ let newestMovie = () => {
 
 console.log(newestMovie());
 
+console.log(movies.find(movie => movie.Year == newestMovie()))
+
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
 
 let movieNumber = () => movies.length
 
-console.log(movieNumber);
+console.log(movieNumber());
 
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
