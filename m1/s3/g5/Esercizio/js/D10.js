@@ -374,7 +374,9 @@ console.log(movies.find(movie => movie.Year == newestMovie()))
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
 
-let movieNumber = () => movies.length
+function movieNumber() {
+  return movies.length;
+}
 
 console.log(movieNumber());
 
