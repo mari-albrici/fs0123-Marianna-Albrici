@@ -1,0 +1,502 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 85%;
+    margin-right: 50px;
+    margin-left: 25px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.product-container {
+    background-color: #FCEDC5;
+    background-image: url(../imgs/honey.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 400px;
+    height: 580px;
+    border-radius: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.product-description {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0 25px 0 25px;
+    color: #3A2103;
+}
+
+.product-description h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    ;
+}
+
+.product-description h3 span {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 10px
+}
+
+.btn {
+    display: flex;
+    align-self: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.aggiungi {
+    color: #3A2103;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 150px;
+    height: 40px;
+    background-color: #F8D677;
+    border-radius: 25px;
+    border: none;
+}
+
+/* NAVIGATION */
+
+nav {
+    background-color: #FCEDC5;
+    border-radius: 80px;
+    width: 60%;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-inline: 20px;
+}
+
+.menu-btn {
+    width: 150px;
+    height: 40px;
+    background-color: #F8D677;
+    border-radius: 25px;
+    border: none;
+}
+
+.menu-btn:hover {
+    width: 180px;
+    height: 60px;
+}
+
+.menu-btn h2 {
+    color: #3A2103;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+#main-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 80px;
+    width: 200px;
+    border-radius: 60px;
+}
+
+#main-btn h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#main-btn:hover {
+    height: 100px;
+    width: 220px;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+
+/* ARTICOLO */
+.article {
+    background-color: #FCEDC5;
+    border-radius: 25px;
+    width: 85%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.article img {
+    width: 50%;
+    margin: 20px;
+}
+
+.article p {
+    line-height: 1.5rem;
+}
+
+
+/* MEDIA QUERIES  */
+
+@media screen and (max-width:575px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 300px;
+        border-radius: 50;
+        margin: 0;
+    }
+
+    nav div:nth-child(3) {
+        order: -2;
+    }
+
+    main {
+        margin: 5px;
+    }
+
+    main h3 {
+        color: #3A2103; 
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    nav {
+        flex-direction: row;
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .menu-btn {
+        width: 10vh;
+        margin: 5px;
+    }
+
+    #main-btn {
+        width: 15vh;
+        height: 8vh;
+        margin: 5px;
+    }
+
+    #main-btn h2 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #main-btn:hover {
+        width: 180px;
+        height: 60px;
+    }
+
+    main h3 {
+        color: #3A2103;
+        font-size: 2rem;
+    }
+
+    .product-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .product-container:nth-child(6) {
+        display: none;
+    }
+
+    .product-container:nth-child(5) {
+        display: none;
+    }
+
+    .product-container {
+        background-size: contain;
+        width: 240px;
+        height: 280px;
+        border-radius: 30px;
+        margin: 10px;
+    }
+
+    .product-description h3 {
+        font-size: 1rem;
+    }
+
+    .product-description h3 span {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .aggiungi {
+        font-size: 0.8rem;
+        font-weight: 400;
+        width: 100px;
+        height: 30px;
+    }
+
+    .product-price {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-left: 5px
+    }
+
+    .article {
+        width: 100%;
+    }
+
+    .article img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 10vh;
+            border-radius: 0;
+        }
+
+        .menu-btn {
+            width: 12vh;
+            margin: 25px;
+        }
+
+        #main-btn {
+            width: 12vh;
+            height: 40px;
+            margin: 25px;
+        }
+
+        #main-btn h2 {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        #main-btn:hover {
+            width: 180px;
+            height: 60px;
+        }
+
+        .logo {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        nav div:nth-child(3) {
+            order: -2;
+        }
+
+        main {
+            margin-left: 15vh;
+        }
+
+        main h3 {
+            color: #3A2103;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .product-cards {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            white-space: nowrap
+        }
+
+        .product-container {
+            background-size: contain;
+            width: 280px;
+            height: 300px;
+            border-radius: 50px;
+            margin: 20px;
+        }
+
+        .product-description h3 {
+            font-size: 1rem;
+        }
+
+        .product-description h3 span {
+            font-size: 0.8rem;
+        }
+
+        .btn {
+            margin-bottom: 10px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .aggiungi {
+            font-size: 0.8rem;
+            font-weight: 400;
+            width: 100px;
+            height: 30px;
+        }
+
+        .product-price {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-left: 5px
+        }
+
+        .article {
+            width: 100%;
+        }
+
+        .article img {
+            width: 100%;
+        }
+
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 15vh;
+            border-radius: 0;
+        }
+
+        .menu-btn {
+            width: 12vh;
+            margin: 25px;
+        }
+
+        #main-btn {
+            width: 12vh;
+            height: 40px;
+            margin: 25px;
+        }
+
+        #main-btn h2 {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        #main-btn:hover {
+            width: 180px;
+            height: 60px;
+        }
+
+        .logo {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        main {
+            margin-left: 20vh;
+            margin-right: 0;
+        }
+
+        nav div:nth-child(3) {
+            order: -2;
+        }
+
+        main h3 {
+            color: #3A2103;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .product-cards {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            white-space: nowrap
+        }
+
+        .product-container {
+            background-size: contain;
+            width: 280px;
+            height: 300px;
+            border-radius: 50px;
+            margin: 20px;
+        }
+
+        .product-description h3 {
+            font-size: 1rem;
+        }
+
+        .product-description h3 span {
+            font-size: 0.8rem;
+        }
+
+        .btn {
+            margin-bottom: 10px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .aggiungi {
+            font-size: 0.8rem;
+            font-weight: 400;
+            width: 100px;
+            height: 30px;
+        }
+
+        .product-price {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-left: 5px
+        }
+
+        .article {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .article img {
+            width: 100%;
+        }
+
+
+    }
