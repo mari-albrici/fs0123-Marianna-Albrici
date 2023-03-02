@@ -1,0 +1,199 @@
+/*
+1 creazione del testo e formattazione di 1 parola da far ruotare
+2 inserimento delle altre 2 parole
+3 sovrapporre le 3 parole
+4 mostrare 1 parola e nascondere le altre 2
+5 animare 1 parola (fadein - fadeout con spostamento)
+6 animare le altre 2 parole
+7 ritardare progressivamente l'animazione delle altre 2 parole 
+*/
+
+body {
+    background-image: url(background.jpg);
+    background-size: contain;
+    font-family: 'Bree Serif', serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+#secondaryBackground {
+    width: 1200px;
+    height: 300px;
+    background-color: #D2D5DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#testoAlternato {
+    width: 900px;
+    height: 150px;
+    color: white;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    padding: 25px;
+    text-shadow: 0px 2px 2px #23B5D3;
+}
+
+.word1,
+.word2,
+.word3 {
+    color: #23B5D3;
+    position: absolute;
+    padding-left: 8px;
+    text-shadow: 0px 2px 2px white;
+}
+
+.word1 {
+    animation: wordOne 8.5s linear infinite both;
+}
+
+.word2 {
+    animation: wordTwo 8.5s linear infinite both;
+}
+
+.word3 {
+    animation: wordThree 8.5s linear infinite both;
+}
+
+@keyframes wordOne {
+    0% {
+        opacity: 0;
+    }
+
+    6.25% {
+        opacity: 0;
+        transform: rotateX(90deg);
+        transform-origin: top;
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: rotateX(0deg)
+    }
+
+    25% {
+        opacity: 0;
+        transform: rotateX(90deg);
+        transform-origin: bottom;
+    }
+
+    37.5% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    62.5% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    87.5% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes wordTwo {
+    0% {
+        opacity: 0;
+
+    }
+
+    12.5% {
+        opacity: 0;
+
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    37.5% {
+        opacity: 0;
+        transform: rotateX(90deg);
+        transform-origin: top;
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotateX(0deg)
+    }
+
+    62.5% {
+        opacity: 0;
+        transform: rotateX(90deg);
+        transform-origin: bottom;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    87.5% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes wordThree {
+    0% {
+        opacity: 0;
+    }
+
+    12.5% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    37.5% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    62.5% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+        transform: rotateX(90deg);
+        transform-origin: top;
+    }
+
+    87.5% {
+        opacity: 1;
+        transform: rotateX(0deg)
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotateX(90deg);
+        transform-origin: bottom;
+    }
+}

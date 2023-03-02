@@ -1,0 +1,75 @@
+body {
+    background-image: url(blackboard.jpeg);
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 150px 100px 200px 100px;
+    font-family: 'Indie Flower', cursive;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.postit {
+    width: 350px;
+    height: 300px; 
+}
+
+.postit h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.postit p {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+#postit1, #postit3, #postit6 {
+    background-color: #BBD1EA;
+    transform: rotate3d(1, 1, 1, -6deg) rotate(-3deg) skewY(1deg);
+    box-shadow: inset 0px -8px 20px #A1C0E2, 5px 30px 10px black;
+    transition: box-shadow 100ms;
+    transition: 500ms;
+}
+
+#postit2, #postit8 {
+    background-color: #FFD4CA;
+    transform: rotate3d(1, 1, 1, 6deg) rotate(3deg); 
+    box-shadow: inset 0px -8px 20px #FFBCAD, 5px 30px 10px black;
+    transition: box-shadow 100ms;
+    transition: 500ms;
+}
+
+#postit4, #postit5, #postit7 {
+    background-color: #F7EAB5;
+    transform: rotate3d(1, 1, 1, 6deg) rotate(-3deg) skewY(-1deg);
+    box-shadow: inset 0px -8px 20px #F3DE8A, 5px 30px 10px black;
+    transition: box-shadow 100ms;
+    transition: 500ms;
+}
+
+
+#postit2:hover , #postit8:hover{
+    transform: perspective(180px) translateZ(10px) rotate(3deg);
+    box-shadow: inset 0px -8px 20px #FFBCAD, 8px 35px 50px black;
+    transition: 500ms;
+}
+
+#postit1:hover, #postit3:hover, #postit6:hover {
+    transform: perspective(180px) translateZ(10px) rotate(-3deg) skewY(1deg);
+    box-shadow: inset 0px -8px 20px #A1C0E2, 8px 35px 50px black;
+    transition: 500ms;
+}
+
+#postit4:hover, #postit5:hover, #postit7:hover {
+    transform: perspective(180px) translateZ(10px) rotate(-3deg) skewY(-1deg);
+    box-shadow: inset 0px -8px 20px #F3DE8A, 8px 35px 50px black;
+    transition: 500ms;
+}
