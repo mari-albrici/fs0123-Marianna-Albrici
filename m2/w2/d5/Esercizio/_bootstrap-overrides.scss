@@ -34,6 +34,21 @@ $spacers: (
 	9: $spacer * 11,
 );
 
+$position-values: (
+	0: 0,
+	25: 25%,
+	50: 50%,
+	55: 55%,
+	60: 60%,
+	65: 65%,
+	70: 70%,
+	75: 75%,
+	80: 80%,
+	85: 85%,
+	90: 95%,
+	100: 100%,
+);
+
 // 5. Include remainder of required parts
 @import 'bootstrap/maps';
 @import 'bootstrap/mixins';
