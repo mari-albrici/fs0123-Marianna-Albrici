@@ -3,10 +3,32 @@
 
 // 2. Include any default variable overrides here
 
+$primary: #141414;
+$secondary: #e50815;
+$success: #54b9c5;
+$info: #e5e5e5;
+$light: #d6d6d6;
+
+$nav-link-hover-color: $light;
+$nav-link-color: white;
+$nav-link-font-size: 0.75rem;
+
 // 3. Include remainder of required Bootstrap stylesheets
 @import 'bootstrap/variables';
 
 // 4. Include any default map overrides here
+
+$spacers: (
+	0: 0,
+	1: $spacer * 0.25,
+	2: $spacer * 0.5,
+	3: $spacer,
+	4: $spacer * 1.5,
+	5: $spacer * 3,
+	6: $spacer * 5,
+	7: $spacer * 7,
+	8: $spacer * 9,
+);
 
 // 5. Include remainder of required parts
 @import 'bootstrap/maps';
