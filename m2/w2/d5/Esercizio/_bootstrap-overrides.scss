@@ -13,6 +13,8 @@ $nav-link-hover-color: $light;
 $nav-link-color: white;
 $nav-link-font-size: 0.75rem;
 
+$dropdown-min-width: 10rem;
+
 // 3. Include remainder of required Bootstrap stylesheets
 @import 'bootstrap/variables';
 

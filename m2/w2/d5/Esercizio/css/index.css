@@ -11846,4 +11846,9 @@ textarea.form-control-lg {
 }
 body {
   font-family: "Roboto", sans-serif;
+}
+
+.navbar,
+main {
+  padding-inline: 50px;
 }/*# sourceMappingURL=index.css.map */
