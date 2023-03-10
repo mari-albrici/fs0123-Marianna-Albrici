@@ -29,7 +29,7 @@
   --bs-secondary: #e50815;
   --bs-success: #54b9c5;
   --bs-info: #e5e5e5;
-  --bs-warning: #ffc107;
+  --bs-warning: #454a49;
   --bs-danger: #dc3545;
   --bs-light: #d6d6d6;
   --bs-dark: #212529;
@@ -37,7 +37,7 @@
   --bs-secondary-rgb: 229, 8, 21;
   --bs-success-rgb: 84, 185, 197;
   --bs-info-rgb: 229, 229, 229;
-  --bs-warning-rgb: 255, 193, 7;
+  --bs-warning-rgb: 69, 74, 73;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 214, 214, 214;
   --bs-dark-rgb: 33, 37, 41;
@@ -911,6 +911,16 @@ progress {
   --bs-gutter-y: 9rem;
 }
 
+.g-9,
+.gx-9 {
+  --bs-gutter-x: 11rem;
+}
+
+.g-9,
+.gy-9 {
+  --bs-gutter-y: 11rem;
+}
+
 @media (min-width: 576px) {
   .col-sm {
     flex: 1 0 0%;
@@ -1102,6 +1112,14 @@ progress {
   .g-sm-8,
   .gy-sm-8 {
     --bs-gutter-y: 9rem;
+  }
+  .g-sm-9,
+  .gx-sm-9 {
+    --bs-gutter-x: 11rem;
+  }
+  .g-sm-9,
+  .gy-sm-9 {
+    --bs-gutter-y: 11rem;
   }
 }
 @media (min-width: 768px) {
@@ -1296,6 +1314,14 @@ progress {
   .gy-md-8 {
     --bs-gutter-y: 9rem;
   }
+  .g-md-9,
+  .gx-md-9 {
+    --bs-gutter-x: 11rem;
+  }
+  .g-md-9,
+  .gy-md-9 {
+    --bs-gutter-y: 11rem;
+  }
 }
 @media (min-width: 992px) {
   .col-lg {
@@ -1488,6 +1514,14 @@ progress {
   .g-lg-8,
   .gy-lg-8 {
     --bs-gutter-y: 9rem;
+  }
+  .g-lg-9,
+  .gx-lg-9 {
+    --bs-gutter-x: 11rem;
+  }
+  .g-lg-9,
+  .gy-lg-9 {
+    --bs-gutter-y: 11rem;
   }
 }
 @media (min-width: 1200px) {
@@ -1682,6 +1716,14 @@ progress {
   .gy-xl-8 {
     --bs-gutter-y: 9rem;
   }
+  .g-xl-9,
+  .gx-xl-9 {
+    --bs-gutter-x: 11rem;
+  }
+  .g-xl-9,
+  .gy-xl-9 {
+    --bs-gutter-y: 11rem;
+  }
 }
 @media (min-width: 1400px) {
   .col-xxl {
@@ -1875,6 +1917,14 @@ progress {
   .gy-xxl-8 {
     --bs-gutter-y: 9rem;
   }
+  .g-xxl-9,
+  .gx-xxl-9 {
+    --bs-gutter-x: 11rem;
+  }
+  .g-xxl-9,
+  .gy-xxl-9 {
+    --bs-gutter-y: 11rem;
+  }
 }
 .table {
   --bs-table-color: var(--bs-body-color);
@@ -2010,13 +2060,13 @@ progress {
 
 .table-warning {
   --bs-table-color: #000;
-  --bs-table-bg: #fff3cd;
-  --bs-table-border-color: #e6dbb9;
-  --bs-table-striped-bg: #f2e7c3;
+  --bs-table-bg: #dadbdb;
+  --bs-table-border-color: #c4c5c5;
+  --bs-table-striped-bg: #cfd0d0;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #e6dbb9;
+  --bs-table-active-bg: #c4c5c5;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #ece1be;
+  --bs-table-hover-bg: #cacbcb;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -3016,20 +3066,20 @@ textarea.form-control-lg {
 }
 
 .btn-warning {
-  --bs-btn-color: #000;
-  --bs-btn-bg: #ffc107;
-  --bs-btn-border-color: #ffc107;
-  --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #ffca2c;
-  --bs-btn-hover-border-color: #ffc720;
-  --bs-btn-focus-shadow-rgb: 217, 164, 6;
-  --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #ffcd39;
-  --bs-btn-active-border-color: #ffc720;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #454a49;
+  --bs-btn-border-color: #454a49;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #3b3f3e;
+  --bs-btn-hover-border-color: #373b3a;
+  --bs-btn-focus-shadow-rgb: 97, 101, 100;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #373b3a;
+  --bs-btn-active-border-color: #343837;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #ffc107;
-  --bs-btn-disabled-border-color: #ffc107;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #454a49;
+  --bs-btn-disabled-border-color: #454a49;
 }
 
 .btn-danger {
@@ -3152,19 +3202,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-warning {
-  --bs-btn-color: #ffc107;
-  --bs-btn-border-color: #ffc107;
-  --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #ffc107;
-  --bs-btn-hover-border-color: #ffc107;
-  --bs-btn-focus-shadow-rgb: 255, 193, 7;
-  --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #ffc107;
-  --bs-btn-active-border-color: #ffc107;
+  --bs-btn-color: #454a49;
+  --bs-btn-border-color: #454a49;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #454a49;
+  --bs-btn-hover-border-color: #454a49;
+  --bs-btn-focus-shadow-rgb: 69, 74, 73;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #454a49;
+  --bs-btn-active-border-color: #454a49;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #ffc107;
+  --bs-btn-disabled-color: #454a49;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #ffc107;
+  --bs-btn-disabled-border-color: #454a49;
   --bs-gradient: none;
 }
 
@@ -4798,12 +4848,12 @@ textarea.form-control-lg {
 }
 
 .alert-warning {
-  --bs-alert-color: #664d03;
-  --bs-alert-bg: #fff3cd;
-  --bs-alert-border-color: #ffecb5;
+  --bs-alert-color: #292c2c;
+  --bs-alert-bg: #dadbdb;
+  --bs-alert-border-color: #c7c9c8;
 }
 .alert-warning .alert-link {
-  color: #523e02;
+  color: #212323;
 }
 
 .alert-danger {
@@ -5182,17 +5232,17 @@ textarea.form-control-lg {
 }
 
 .list-group-item-warning {
-  color: #664d03;
-  background-color: #fff3cd;
+  color: #292c2c;
+  background-color: #dadbdb;
 }
 .list-group-item-warning.list-group-item-action:hover, .list-group-item-warning.list-group-item-action:focus {
-  color: #664d03;
-  background-color: #e6dbb9;
+  color: #292c2c;
+  background-color: #c4c5c5;
 }
 .list-group-item-warning.list-group-item-action.active {
   color: #fff;
-  background-color: #664d03;
-  border-color: #664d03;
+  background-color: #292c2c;
+  border-color: #292c2c;
 }
 
 .list-group-item-danger {
@@ -6774,8 +6824,8 @@ textarea.form-control-lg {
 }
 
 .text-bg-warning {
-  color: #000 !important;
-  background-color: RGBA(255, 193, 7, var(--bs-bg-opacity, 1)) !important;
+  color: #fff !important;
+  background-color: RGBA(69, 74, 73, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-danger {
@@ -6822,10 +6872,10 @@ textarea.form-control-lg {
 }
 
 .link-warning {
-  color: #ffc107 !important;
+  color: #454a49 !important;
 }
 .link-warning:hover, .link-warning:focus {
-  color: #ffcd39 !important;
+  color: #373b3a !important;
 }
 
 .link-danger {
@@ -7627,6 +7677,10 @@ textarea.form-control-lg {
   margin: 9rem !important;
 }
 
+.m-9 {
+  margin: 11rem !important;
+}
+
 .m-auto {
   margin: auto !important;
 }
@@ -7674,6 +7728,11 @@ textarea.form-control-lg {
 .mx-8 {
   margin-right: 9rem !important;
   margin-left: 9rem !important;
+}
+
+.mx-9 {
+  margin-right: 11rem !important;
+  margin-left: 11rem !important;
 }
 
 .mx-auto {
@@ -7726,6 +7785,11 @@ textarea.form-control-lg {
   margin-bottom: 9rem !important;
 }
 
+.my-9 {
+  margin-top: 11rem !important;
+  margin-bottom: 11rem !important;
+}
+
 .my-auto {
   margin-top: auto !important;
   margin-bottom: auto !important;
@@ -7765,6 +7829,10 @@ textarea.form-control-lg {
 
 .mt-8 {
   margin-top: 9rem !important;
+}
+
+.mt-9 {
+  margin-top: 11rem !important;
 }
 
 .mt-auto {
@@ -7807,6 +7875,10 @@ textarea.form-control-lg {
   margin-right: 9rem !important;
 }
 
+.me-9 {
+  margin-right: 11rem !important;
+}
+
 .me-auto {
   margin-right: auto !important;
 }
@@ -7845,6 +7917,10 @@ textarea.form-control-lg {
 
 .mb-8 {
   margin-bottom: 9rem !important;
+}
+
+.mb-9 {
+  margin-bottom: 11rem !important;
 }
 
 .mb-auto {
@@ -7887,6 +7963,10 @@ textarea.form-control-lg {
   margin-left: 9rem !important;
 }
 
+.ms-9 {
+  margin-left: 11rem !important;
+}
+
 .ms-auto {
   margin-left: auto !important;
 }
@@ -7925,6 +8005,10 @@ textarea.form-control-lg {
 
 .p-8 {
   padding: 9rem !important;
+}
+
+.p-9 {
+  padding: 11rem !important;
 }
 
 .px-0 {
@@ -7972,6 +8056,11 @@ textarea.form-control-lg {
   padding-left: 9rem !important;
 }
 
+.px-9 {
+  padding-right: 11rem !important;
+  padding-left: 11rem !important;
+}
+
 .py-0 {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -8017,6 +8106,11 @@ textarea.form-control-lg {
   padding-bottom: 9rem !important;
 }
 
+.py-9 {
+  padding-top: 11rem !important;
+  padding-bottom: 11rem !important;
+}
+
 .pt-0 {
   padding-top: 0 !important;
 }
@@ -8051,6 +8145,10 @@ textarea.form-control-lg {
 
 .pt-8 {
   padding-top: 9rem !important;
+}
+
+.pt-9 {
+  padding-top: 11rem !important;
 }
 
 .pe-0 {
@@ -8089,6 +8187,10 @@ textarea.form-control-lg {
   padding-right: 9rem !important;
 }
 
+.pe-9 {
+  padding-right: 11rem !important;
+}
+
 .pb-0 {
   padding-bottom: 0 !important;
 }
@@ -8123,6 +8225,10 @@ textarea.form-control-lg {
 
 .pb-8 {
   padding-bottom: 9rem !important;
+}
+
+.pb-9 {
+  padding-bottom: 11rem !important;
 }
 
 .ps-0 {
@@ -8161,6 +8267,10 @@ textarea.form-control-lg {
   padding-left: 9rem !important;
 }
 
+.ps-9 {
+  padding-left: 11rem !important;
+}
+
 .gap-0 {
   gap: 0 !important;
 }
@@ -8195,6 +8305,10 @@ textarea.form-control-lg {
 
 .gap-8 {
   gap: 9rem !important;
+}
+
+.gap-9 {
+  gap: 11rem !important;
 }
 
 .font-monospace {
@@ -8779,6 +8893,9 @@ textarea.form-control-lg {
   .m-sm-8 {
     margin: 9rem !important;
   }
+  .m-sm-9 {
+    margin: 11rem !important;
+  }
   .m-sm-auto {
     margin: auto !important;
   }
@@ -8817,6 +8934,10 @@ textarea.form-control-lg {
   .mx-sm-8 {
     margin-right: 9rem !important;
     margin-left: 9rem !important;
+  }
+  .mx-sm-9 {
+    margin-right: 11rem !important;
+    margin-left: 11rem !important;
   }
   .mx-sm-auto {
     margin-right: auto !important;
@@ -8858,6 +8979,10 @@ textarea.form-control-lg {
     margin-top: 9rem !important;
     margin-bottom: 9rem !important;
   }
+  .my-sm-9 {
+    margin-top: 11rem !important;
+    margin-bottom: 11rem !important;
+  }
   .my-sm-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -8889,6 +9014,9 @@ textarea.form-control-lg {
   .mt-sm-8 {
     margin-top: 9rem !important;
   }
+  .mt-sm-9 {
+    margin-top: 11rem !important;
+  }
   .mt-sm-auto {
     margin-top: auto !important;
   }
@@ -8918,6 +9046,9 @@ textarea.form-control-lg {
   }
   .me-sm-8 {
     margin-right: 9rem !important;
+  }
+  .me-sm-9 {
+    margin-right: 11rem !important;
   }
   .me-sm-auto {
     margin-right: auto !important;
@@ -8949,6 +9080,9 @@ textarea.form-control-lg {
   .mb-sm-8 {
     margin-bottom: 9rem !important;
   }
+  .mb-sm-9 {
+    margin-bottom: 11rem !important;
+  }
   .mb-sm-auto {
     margin-bottom: auto !important;
   }
@@ -8979,6 +9113,9 @@ textarea.form-control-lg {
   .ms-sm-8 {
     margin-left: 9rem !important;
   }
+  .ms-sm-9 {
+    margin-left: 11rem !important;
+  }
   .ms-sm-auto {
     margin-left: auto !important;
   }
@@ -9008,6 +9145,9 @@ textarea.form-control-lg {
   }
   .p-sm-8 {
     padding: 9rem !important;
+  }
+  .p-sm-9 {
+    padding: 11rem !important;
   }
   .px-sm-0 {
     padding-right: 0 !important;
@@ -9045,6 +9185,10 @@ textarea.form-control-lg {
     padding-right: 9rem !important;
     padding-left: 9rem !important;
   }
+  .px-sm-9 {
+    padding-right: 11rem !important;
+    padding-left: 11rem !important;
+  }
   .py-sm-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -9081,6 +9225,10 @@ textarea.form-control-lg {
     padding-top: 9rem !important;
     padding-bottom: 9rem !important;
   }
+  .py-sm-9 {
+    padding-top: 11rem !important;
+    padding-bottom: 11rem !important;
+  }
   .pt-sm-0 {
     padding-top: 0 !important;
   }
@@ -9107,6 +9255,9 @@ textarea.form-control-lg {
   }
   .pt-sm-8 {
     padding-top: 9rem !important;
+  }
+  .pt-sm-9 {
+    padding-top: 11rem !important;
   }
   .pe-sm-0 {
     padding-right: 0 !important;
@@ -9135,6 +9286,9 @@ textarea.form-control-lg {
   .pe-sm-8 {
     padding-right: 9rem !important;
   }
+  .pe-sm-9 {
+    padding-right: 11rem !important;
+  }
   .pb-sm-0 {
     padding-bottom: 0 !important;
   }
@@ -9161,6 +9315,9 @@ textarea.form-control-lg {
   }
   .pb-sm-8 {
     padding-bottom: 9rem !important;
+  }
+  .pb-sm-9 {
+    padding-bottom: 11rem !important;
   }
   .ps-sm-0 {
     padding-left: 0 !important;
@@ -9189,6 +9346,9 @@ textarea.form-control-lg {
   .ps-sm-8 {
     padding-left: 9rem !important;
   }
+  .ps-sm-9 {
+    padding-left: 11rem !important;
+  }
   .gap-sm-0 {
     gap: 0 !important;
   }
@@ -9215,6 +9375,9 @@ textarea.form-control-lg {
   }
   .gap-sm-8 {
     gap: 9rem !important;
+  }
+  .gap-sm-9 {
+    gap: 11rem !important;
   }
   .text-sm-start {
     text-align: left !important;
@@ -9422,6 +9585,9 @@ textarea.form-control-lg {
   .m-md-8 {
     margin: 9rem !important;
   }
+  .m-md-9 {
+    margin: 11rem !important;
+  }
   .m-md-auto {
     margin: auto !important;
   }
@@ -9460,6 +9626,10 @@ textarea.form-control-lg {
   .mx-md-8 {
     margin-right: 9rem !important;
     margin-left: 9rem !important;
+  }
+  .mx-md-9 {
+    margin-right: 11rem !important;
+    margin-left: 11rem !important;
   }
   .mx-md-auto {
     margin-right: auto !important;
@@ -9501,6 +9671,10 @@ textarea.form-control-lg {
     margin-top: 9rem !important;
     margin-bottom: 9rem !important;
   }
+  .my-md-9 {
+    margin-top: 11rem !important;
+    margin-bottom: 11rem !important;
+  }
   .my-md-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -9532,6 +9706,9 @@ textarea.form-control-lg {
   .mt-md-8 {
     margin-top: 9rem !important;
   }
+  .mt-md-9 {
+    margin-top: 11rem !important;
+  }
   .mt-md-auto {
     margin-top: auto !important;
   }
@@ -9561,6 +9738,9 @@ textarea.form-control-lg {
   }
   .me-md-8 {
     margin-right: 9rem !important;
+  }
+  .me-md-9 {
+    margin-right: 11rem !important;
   }
   .me-md-auto {
     margin-right: auto !important;
@@ -9592,6 +9772,9 @@ textarea.form-control-lg {
   .mb-md-8 {
     margin-bottom: 9rem !important;
   }
+  .mb-md-9 {
+    margin-bottom: 11rem !important;
+  }
   .mb-md-auto {
     margin-bottom: auto !important;
   }
@@ -9622,6 +9805,9 @@ textarea.form-control-lg {
   .ms-md-8 {
     margin-left: 9rem !important;
   }
+  .ms-md-9 {
+    margin-left: 11rem !important;
+  }
   .ms-md-auto {
     margin-left: auto !important;
   }
@@ -9651,6 +9837,9 @@ textarea.form-control-lg {
   }
   .p-md-8 {
     padding: 9rem !important;
+  }
+  .p-md-9 {
+    padding: 11rem !important;
   }
   .px-md-0 {
     padding-right: 0 !important;
@@ -9688,6 +9877,10 @@ textarea.form-control-lg {
     padding-right: 9rem !important;
     padding-left: 9rem !important;
   }
+  .px-md-9 {
+    padding-right: 11rem !important;
+    padding-left: 11rem !important;
+  }
   .py-md-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -9724,6 +9917,10 @@ textarea.form-control-lg {
     padding-top: 9rem !important;
     padding-bottom: 9rem !important;
   }
+  .py-md-9 {
+    padding-top: 11rem !important;
+    padding-bottom: 11rem !important;
+  }
   .pt-md-0 {
     padding-top: 0 !important;
   }
@@ -9750,6 +9947,9 @@ textarea.form-control-lg {
   }
   .pt-md-8 {
     padding-top: 9rem !important;
+  }
+  .pt-md-9 {
+    padding-top: 11rem !important;
   }
   .pe-md-0 {
     padding-right: 0 !important;
@@ -9778,6 +9978,9 @@ textarea.form-control-lg {
   .pe-md-8 {
     padding-right: 9rem !important;
   }
+  .pe-md-9 {
+    padding-right: 11rem !important;
+  }
   .pb-md-0 {
     padding-bottom: 0 !important;
   }
@@ -9804,6 +10007,9 @@ textarea.form-control-lg {
   }
   .pb-md-8 {
     padding-bottom: 9rem !important;
+  }
+  .pb-md-9 {
+    padding-bottom: 11rem !important;
   }
   .ps-md-0 {
     padding-left: 0 !important;
@@ -9832,6 +10038,9 @@ textarea.form-control-lg {
   .ps-md-8 {
     padding-left: 9rem !important;
   }
+  .ps-md-9 {
+    padding-left: 11rem !important;
+  }
   .gap-md-0 {
     gap: 0 !important;
   }
@@ -9858,6 +10067,9 @@ textarea.form-control-lg {
   }
   .gap-md-8 {
     gap: 9rem !important;
+  }
+  .gap-md-9 {
+    gap: 11rem !important;
   }
   .text-md-start {
     text-align: left !important;
@@ -10065,6 +10277,9 @@ textarea.form-control-lg {
   .m-lg-8 {
     margin: 9rem !important;
   }
+  .m-lg-9 {
+    margin: 11rem !important;
+  }
   .m-lg-auto {
     margin: auto !important;
   }
@@ -10103,6 +10318,10 @@ textarea.form-control-lg {
   .mx-lg-8 {
     margin-right: 9rem !important;
     margin-left: 9rem !important;
+  }
+  .mx-lg-9 {
+    margin-right: 11rem !important;
+    margin-left: 11rem !important;
   }
   .mx-lg-auto {
     margin-right: auto !important;
@@ -10144,6 +10363,10 @@ textarea.form-control-lg {
     margin-top: 9rem !important;
     margin-bottom: 9rem !important;
   }
+  .my-lg-9 {
+    margin-top: 11rem !important;
+    margin-bottom: 11rem !important;
+  }
   .my-lg-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -10175,6 +10398,9 @@ textarea.form-control-lg {
   .mt-lg-8 {
     margin-top: 9rem !important;
   }
+  .mt-lg-9 {
+    margin-top: 11rem !important;
+  }
   .mt-lg-auto {
     margin-top: auto !important;
   }
@@ -10204,6 +10430,9 @@ textarea.form-control-lg {
   }
   .me-lg-8 {
     margin-right: 9rem !important;
+  }
+  .me-lg-9 {
+    margin-right: 11rem !important;
   }
   .me-lg-auto {
     margin-right: auto !important;
@@ -10235,6 +10464,9 @@ textarea.form-control-lg {
   .mb-lg-8 {
     margin-bottom: 9rem !important;
   }
+  .mb-lg-9 {
+    margin-bottom: 11rem !important;
+  }
   .mb-lg-auto {
     margin-bottom: auto !important;
   }
@@ -10265,6 +10497,9 @@ textarea.form-control-lg {
   .ms-lg-8 {
     margin-left: 9rem !important;
   }
+  .ms-lg-9 {
+    margin-left: 11rem !important;
+  }
   .ms-lg-auto {
     margin-left: auto !important;
   }
@@ -10294,6 +10529,9 @@ textarea.form-control-lg {
   }
   .p-lg-8 {
     padding: 9rem !important;
+  }
+  .p-lg-9 {
+    padding: 11rem !important;
   }
   .px-lg-0 {
     padding-right: 0 !important;
@@ -10331,6 +10569,10 @@ textarea.form-control-lg {
     padding-right: 9rem !important;
     padding-left: 9rem !important;
   }
+  .px-lg-9 {
+    padding-right: 11rem !important;
+    padding-left: 11rem !important;
+  }
   .py-lg-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -10367,6 +10609,10 @@ textarea.form-control-lg {
     padding-top: 9rem !important;
     padding-bottom: 9rem !important;
   }
+  .py-lg-9 {
+    padding-top: 11rem !important;
+    padding-bottom: 11rem !important;
+  }
   .pt-lg-0 {
     padding-top: 0 !important;
   }
@@ -10393,6 +10639,9 @@ textarea.form-control-lg {
   }
   .pt-lg-8 {
     padding-top: 9rem !important;
+  }
+  .pt-lg-9 {
+    padding-top: 11rem !important;
   }
   .pe-lg-0 {
     padding-right: 0 !important;
@@ -10421,6 +10670,9 @@ textarea.form-control-lg {
   .pe-lg-8 {
     padding-right: 9rem !important;
   }
+  .pe-lg-9 {
+    padding-right: 11rem !important;
+  }
   .pb-lg-0 {
     padding-bottom: 0 !important;
   }
@@ -10447,6 +10699,9 @@ textarea.form-control-lg {
   }
   .pb-lg-8 {
     padding-bottom: 9rem !important;
+  }
+  .pb-lg-9 {
+    padding-bottom: 11rem !important;
   }
   .ps-lg-0 {
     padding-left: 0 !important;
@@ -10475,6 +10730,9 @@ textarea.form-control-lg {
   .ps-lg-8 {
     padding-left: 9rem !important;
   }
+  .ps-lg-9 {
+    padding-left: 11rem !important;
+  }
   .gap-lg-0 {
     gap: 0 !important;
   }
@@ -10501,6 +10759,9 @@ textarea.form-control-lg {
   }
   .gap-lg-8 {
     gap: 9rem !important;
+  }
+  .gap-lg-9 {
+    gap: 11rem !important;
   }
   .text-lg-start {
     text-align: left !important;
@@ -10708,6 +10969,9 @@ textarea.form-control-lg {
   .m-xl-8 {
     margin: 9rem !important;
   }
+  .m-xl-9 {
+    margin: 11rem !important;
+  }
   .m-xl-auto {
     margin: auto !important;
   }
@@ -10746,6 +11010,10 @@ textarea.form-control-lg {
   .mx-xl-8 {
     margin-right: 9rem !important;
     margin-left: 9rem !important;
+  }
+  .mx-xl-9 {
+    margin-right: 11rem !important;
+    margin-left: 11rem !important;
   }
   .mx-xl-auto {
     margin-right: auto !important;
@@ -10787,6 +11055,10 @@ textarea.form-control-lg {
     margin-top: 9rem !important;
     margin-bottom: 9rem !important;
   }
+  .my-xl-9 {
+    margin-top: 11rem !important;
+    margin-bottom: 11rem !important;
+  }
   .my-xl-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -10818,6 +11090,9 @@ textarea.form-control-lg {
   .mt-xl-8 {
     margin-top: 9rem !important;
   }
+  .mt-xl-9 {
+    margin-top: 11rem !important;
+  }
   .mt-xl-auto {
     margin-top: auto !important;
   }
@@ -10847,6 +11122,9 @@ textarea.form-control-lg {
   }
   .me-xl-8 {
     margin-right: 9rem !important;
+  }
+  .me-xl-9 {
+    margin-right: 11rem !important;
   }
   .me-xl-auto {
     margin-right: auto !important;
@@ -10878,6 +11156,9 @@ textarea.form-control-lg {
   .mb-xl-8 {
     margin-bottom: 9rem !important;
   }
+  .mb-xl-9 {
+    margin-bottom: 11rem !important;
+  }
   .mb-xl-auto {
     margin-bottom: auto !important;
   }
@@ -10908,6 +11189,9 @@ textarea.form-control-lg {
   .ms-xl-8 {
     margin-left: 9rem !important;
   }
+  .ms-xl-9 {
+    margin-left: 11rem !important;
+  }
   .ms-xl-auto {
     margin-left: auto !important;
   }
@@ -10937,6 +11221,9 @@ textarea.form-control-lg {
   }
   .p-xl-8 {
     padding: 9rem !important;
+  }
+  .p-xl-9 {
+    padding: 11rem !important;
   }
   .px-xl-0 {
     padding-right: 0 !important;
@@ -10974,6 +11261,10 @@ textarea.form-control-lg {
     padding-right: 9rem !important;
     padding-left: 9rem !important;
   }
+  .px-xl-9 {
+    padding-right: 11rem !important;
+    padding-left: 11rem !important;
+  }
   .py-xl-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -11010,6 +11301,10 @@ textarea.form-control-lg {
     padding-top: 9rem !important;
     padding-bottom: 9rem !important;
   }
+  .py-xl-9 {
+    padding-top: 11rem !important;
+    padding-bottom: 11rem !important;
+  }
   .pt-xl-0 {
     padding-top: 0 !important;
   }
@@ -11036,6 +11331,9 @@ textarea.form-control-lg {
   }
   .pt-xl-8 {
     padding-top: 9rem !important;
+  }
+  .pt-xl-9 {
+    padding-top: 11rem !important;
   }
   .pe-xl-0 {
     padding-right: 0 !important;
@@ -11064,6 +11362,9 @@ textarea.form-control-lg {
   .pe-xl-8 {
     padding-right: 9rem !important;
   }
+  .pe-xl-9 {
+    padding-right: 11rem !important;
+  }
   .pb-xl-0 {
     padding-bottom: 0 !important;
   }
@@ -11090,6 +11391,9 @@ textarea.form-control-lg {
   }
   .pb-xl-8 {
     padding-bottom: 9rem !important;
+  }
+  .pb-xl-9 {
+    padding-bottom: 11rem !important;
   }
   .ps-xl-0 {
     padding-left: 0 !important;
@@ -11118,6 +11422,9 @@ textarea.form-control-lg {
   .ps-xl-8 {
     padding-left: 9rem !important;
   }
+  .ps-xl-9 {
+    padding-left: 11rem !important;
+  }
   .gap-xl-0 {
     gap: 0 !important;
   }
@@ -11144,6 +11451,9 @@ textarea.form-control-lg {
   }
   .gap-xl-8 {
     gap: 9rem !important;
+  }
+  .gap-xl-9 {
+    gap: 11rem !important;
   }
   .text-xl-start {
     text-align: left !important;
@@ -11351,6 +11661,9 @@ textarea.form-control-lg {
   .m-xxl-8 {
     margin: 9rem !important;
   }
+  .m-xxl-9 {
+    margin: 11rem !important;
+  }
   .m-xxl-auto {
     margin: auto !important;
   }
@@ -11389,6 +11702,10 @@ textarea.form-control-lg {
   .mx-xxl-8 {
     margin-right: 9rem !important;
     margin-left: 9rem !important;
+  }
+  .mx-xxl-9 {
+    margin-right: 11rem !important;
+    margin-left: 11rem !important;
   }
   .mx-xxl-auto {
     margin-right: auto !important;
@@ -11430,6 +11747,10 @@ textarea.form-control-lg {
     margin-top: 9rem !important;
     margin-bottom: 9rem !important;
   }
+  .my-xxl-9 {
+    margin-top: 11rem !important;
+    margin-bottom: 11rem !important;
+  }
   .my-xxl-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -11461,6 +11782,9 @@ textarea.form-control-lg {
   .mt-xxl-8 {
     margin-top: 9rem !important;
   }
+  .mt-xxl-9 {
+    margin-top: 11rem !important;
+  }
   .mt-xxl-auto {
     margin-top: auto !important;
   }
@@ -11490,6 +11814,9 @@ textarea.form-control-lg {
   }
   .me-xxl-8 {
     margin-right: 9rem !important;
+  }
+  .me-xxl-9 {
+    margin-right: 11rem !important;
   }
   .me-xxl-auto {
     margin-right: auto !important;
@@ -11521,6 +11848,9 @@ textarea.form-control-lg {
   .mb-xxl-8 {
     margin-bottom: 9rem !important;
   }
+  .mb-xxl-9 {
+    margin-bottom: 11rem !important;
+  }
   .mb-xxl-auto {
     margin-bottom: auto !important;
   }
@@ -11551,6 +11881,9 @@ textarea.form-control-lg {
   .ms-xxl-8 {
     margin-left: 9rem !important;
   }
+  .ms-xxl-9 {
+    margin-left: 11rem !important;
+  }
   .ms-xxl-auto {
     margin-left: auto !important;
   }
@@ -11580,6 +11913,9 @@ textarea.form-control-lg {
   }
   .p-xxl-8 {
     padding: 9rem !important;
+  }
+  .p-xxl-9 {
+    padding: 11rem !important;
   }
   .px-xxl-0 {
     padding-right: 0 !important;
@@ -11617,6 +11953,10 @@ textarea.form-control-lg {
     padding-right: 9rem !important;
     padding-left: 9rem !important;
   }
+  .px-xxl-9 {
+    padding-right: 11rem !important;
+    padding-left: 11rem !important;
+  }
   .py-xxl-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -11653,6 +11993,10 @@ textarea.form-control-lg {
     padding-top: 9rem !important;
     padding-bottom: 9rem !important;
   }
+  .py-xxl-9 {
+    padding-top: 11rem !important;
+    padding-bottom: 11rem !important;
+  }
   .pt-xxl-0 {
     padding-top: 0 !important;
   }
@@ -11679,6 +12023,9 @@ textarea.form-control-lg {
   }
   .pt-xxl-8 {
     padding-top: 9rem !important;
+  }
+  .pt-xxl-9 {
+    padding-top: 11rem !important;
   }
   .pe-xxl-0 {
     padding-right: 0 !important;
@@ -11707,6 +12054,9 @@ textarea.form-control-lg {
   .pe-xxl-8 {
     padding-right: 9rem !important;
   }
+  .pe-xxl-9 {
+    padding-right: 11rem !important;
+  }
   .pb-xxl-0 {
     padding-bottom: 0 !important;
   }
@@ -11733,6 +12083,9 @@ textarea.form-control-lg {
   }
   .pb-xxl-8 {
     padding-bottom: 9rem !important;
+  }
+  .pb-xxl-9 {
+    padding-bottom: 11rem !important;
   }
   .ps-xxl-0 {
     padding-left: 0 !important;
@@ -11761,6 +12114,9 @@ textarea.form-control-lg {
   .ps-xxl-8 {
     padding-left: 9rem !important;
   }
+  .ps-xxl-9 {
+    padding-left: 11rem !important;
+  }
   .gap-xxl-0 {
     gap: 0 !important;
   }
@@ -11787,6 +12143,9 @@ textarea.form-control-lg {
   }
   .gap-xxl-8 {
     gap: 9rem !important;
+  }
+  .gap-xxl-9 {
+    gap: 11rem !important;
   }
   .text-xxl-start {
     text-align: left !important;
@@ -11845,10 +12204,15 @@ textarea.form-control-lg {
   }
 }
 body {
+  margin: 0;
   font-family: "Roboto", sans-serif;
 }
 
-.navbar,
-main {
-  padding-inline: 50px;
+@media screen and (min-width: 576px) {
+  .d-none {
+    display: none;
+  }
+}
+main .profile {
+  max-width: 700px;
 }/*# sourceMappingURL=index.css.map */
