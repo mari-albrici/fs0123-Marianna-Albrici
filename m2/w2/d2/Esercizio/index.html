@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Oasis - Travel agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Assets/img/Logo.png" style="height: 100px;" alt="travel agency logo">
+                <span class="d-lg-none fs-2 align-middle lh-1 ps-3">The Oasis</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="true" href="#saldi">Saldi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="true" href="#welcome-summer">Welcome Summer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="true" href="#last-minute">Last Minute</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="true" href="#recensioni">Recensioni</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid px-1 px-md-5">
+
+        <div class="card border border-0 rounded bg-body-tertiary text-center d-none d-md-block">
+            <img src=" Assets/img/Logo-hero.png" class="card-img-top" alt="hero-logo">
+            <div class="card-body">
+                <h5 class="card-title fw-light fst-italic">Vivi i tuoi sogni ad occhi aperti.</h5>
+                <p class="card-text">
+                    <hr class="mx-5">
+                </p>
+                <a href="#" class="btn btn-primary">Parti ora</a>
+            </div>
+        </div>
+
+        <div class="card text-center border border-0 rounded bg-body-tertiary text-center d-block d-md-none">
+            <div class="card-body">
+                <h5 class="card-title">The Oasis - Travel agency</h5>
+                <p class="card-text">Vivi i tuoi sogni ad occhi aperti.</p>
+                <hr class="mx-5">
+                <a href="#" class="btn btn-primary">Parti ora</a>
+            </div>
+        </div>
+
+
+        <div class="container-fluid my-5">
+
+
+            <div>
+                <div class="d-flex justify-content-between">
+                    <h4 id="saldi" class="mb-3">Saldi</h4>
+                    <button class="btn text-info-emphasis" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#saldi-collapse">
+                        Nascondi sezione
+                    </button>
+                </div>
+
+                <div id="saldi-collapse" class="collapse show">
+                    <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center gy-3">
+                        <div class="col trip">
+                            <div class="card border border-primary border-1 rounded-4 overflow-hidden">
+                                <img src="https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    class="card-img-top object-fit-scale" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Maldive</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-info">Prenota</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col trip">
+                            <div class="card border border-primary border-1 rounded-4 overflow-hidden">
+                                <img src="https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    class="card-img-top object-fit-contain" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Carribeans</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-info">Prenota</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col trip">
+                            <div class="card border border-primary border-1 rounded-4 overflow-hidden">
+                                <img src="https://images.pexels.com/photos/5044923/pexels-photo-5044923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    class="card-img-top object-fit-contain" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Seychelles</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-info">Prenota</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col trip">
+                            <div class="card border border-primary border-1 rounded-4 overflow-hidden">
+                                <img src="https://images.pexels.com/photos/5992583/pexels-photo-5992583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    class="card-img-top object-fit-contain" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bali</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-info">Prenota</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="d-flex justify-content-between">
+                    <h4 class="mt-5 mb-3" id="welcome-summer">Welcome Summer</h4>
+                    <button class="btn text-info-emphasis" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#welcome-collapse">
+                        Nascondi sezione
+                    </button>
+                </div>
+
+                <div id="welcome-collapse" class="collapse show">
+                    <div class="row row-cols-sm-2 row-cols-lg-3 row-cols-xl-6 justify-content-center gy-3">
+                        <div class="col trip">
+                            <div class="card border border-0 rounded-2 shadow-lg summer">
+                                <img src="https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    class="card-img-top object-fit-scale" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Maldive</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-info">Prenota</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col trip">
+                            <div class="card border border-0 rounded shadow-lg summer">
+                                <img src="https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    class="card-img-top object-fit-contain" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Carribeans</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-info">Prenota</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col trip">
+                            <div class="card border border-0 rounded shadow-lg summer">
+                                <img src="https://images.pexels.com/photos/5044923/pexels-photo-5044923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    class="card-img-top object-fit-contain" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Seychelles</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-info">Prenota</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col trip">
+                            <div class="card border border-0 rounded shadow-lg summer">
+                                <img src="https://images.pexels.com/photos/5992583/pexels-photo-5992583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    class="card-img-top object-fit-contain" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bali</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-info">Prenota</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col trip">
+                            <div class="card  border border-0 rounded shadow-lg summer">
+                                <img src="https://images.pexels.com/photos/5992583/pexels-photo-5992583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    class="card-img-top object-fit-contain" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bali</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-info">Prenota</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col trip">
+                            <div class="card border border-0 rounded shadow-lg summer">
+                                <img src="https://images.pexels.com/photos/5992583/pexels-photo-5992583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    class="card-img-top object-fit-contain" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bali</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-info">Prenota</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="d-flex justify-content-between">
+                    <h4 class="mt-5 mb-3 d-none d-md-block">Offerta del Giorno</h4>
+                    <button class="btn text-info-emphasis" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#offerta-collapse">
+                        Nascondi sezione
+                    </button>
+                </div>
+
+                <div id="offerta-collapse" class="collapse show">
+                    <div class="container m-0 d-none d-md-block">
+                        <div class="row">
+                            <div class="col-8 trip">
+                                <img src="https://images.pexels.com/photos/3404361/pexels-photo-3404361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    alt="Ireland" class="img-fluid border rounded-5 shadow-lg">
+                            </div>
+                            <div class="col-4">
+                                <h3 class="fs-1">The Emerald Island <br> Ireland</h3>
+                                <p class="font-monospace"> 13.03.2023 - 19.03.2023</p>
+                                <p>Soggiorni a partire da 450€, <br> scoprili ora!</p>
+                                <p class="badge bg-secondary">Best offer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="d-flex justify-content-between">
+                    <h4 class="mt-5 mb-3" id="last-minute">Last Minute</h4>
+                    <button class="btn text-info-emphasis" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#lastminute-collapse">
+                        Nascondi sezione
+                    </button>
+                </div>
+
+                <div id="lastminute-collapse" class="collapse show">
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 gy-3">
+                        <div class="col trip"><img
+                                src="https://images.pexels.com/photos/4125993/pexels-photo-4125993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="random_travels" class="img-fluid rounded-5"></div>
+                        <div class="col trip"><img
+                                src="https://images.pexels.com/photos/4125993/pexels-photo-4125993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="random_travels" class="img-fluid rounded-5"></div>
+                        <div class="col trip"><img
+                                src="https://images.pexels.com/photos/4125993/pexels-photo-4125993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="random_travels" class="img-fluid rounded-5"></div>
+                        <div class="col trip"><img
+                                src="https://images.pexels.com/photos/4125993/pexels-photo-4125993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="random_travels" class="img-fluid rounded-5"></div>
+                        <div class="col trip"><img
+                                src="https://images.pexels.com/photos/4125993/pexels-photo-4125993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="random_travels" class="img-fluid rounded-5"></div>
+                        <div class="col trip"><img
+                                src="https://images.pexels.com/photos/4125993/pexels-photo-4125993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="random_travels" class="img-fluid rounded-5"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="d-flex justify-content-between">
+                    <h4 class="mt-5 mb-3" id="recensioni">Recensioni</h4>
+                    <button class="btn text-info-emphasis" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#recensioni-collapse">
+                        Nascondi sezione
+                    </button>
+                </div>
+
+                <div id="recensioni-collapse" class="collapse show">
+                    <div class="row my-3 d-flex justify-content-center">
+                        <div class="col-2 col-md-1 text-center"><img
+                                src="https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="" class="img-fluid rounded-circle border border-info border-2"></div>
+                        <div class="col align-bottom">
+                            <p class="fw-semibold">Username A</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ad atque, totam quia nisi
+                                reprehenderit quas recusandae, aspernatur minima iusto, consequuntur rerum assumenda!
+                                Laboriosam optio quam fuga quaerat asperiores odio!</p>
+                        </div>
+                    </div>
+                    <div class="row my-3 d-flex justify-content-center">
+                        <div class="col-2 col-md-1 text-center"><img
+                                src="https://images.pexels.com/photos/10311994/pexels-photo-10311994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="" class="img-fluid rounded-circle border border-info border-2"></div>
+                        <div class="col align-bottom">
+                            <p class="fw-semibold">Username B</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ad atque, totam quia nisi
+                                reprehenderit quas recusandae, aspernatur minima iusto, consequuntur rerum assumenda!
+                                Laboriosam optio quam fuga quaerat asperiores odio!</p>
+                        </div>
+                    </div>
+                    <div class="row my-3 d-flex justify-content-center">
+                        <div class="col-2 col-md-1 text-center"><img
+                                src="https://images.pexels.com/photos/5794945/pexels-photo-5794945.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="" class="img-fluid rounded-circle border border-info border-2"></div>
+                        <div class="col align-bottom">
+                            <p class="fw-semibold">Username C</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ad atque, totam quia nisi
+                                reprehenderit quas recusandae, aspernatur minima iusto, consequuntur rerum assumenda!
+                                Laboriosam optio quam fuga quaerat asperiores odio!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark text-center py-5">
+            <button class="btn btn-outline-light my-3" type="button" data-bs-toggle="modal"
+                data-bs-target="#contattaci">Contattaci</button>
+            <p class="text-light">The Oasis - Travel Agency</p>
+            <p class="text-light-emphasis">A Bootstrap project by Marianna A.</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="contattaci" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Contattaci</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Email:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Messaggio:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancella</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Invia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        //RED HOT PILL
+        let hotDeals = document.querySelectorAll(".summer")
+        let summerDeals = Array.from(hotDeals)
+
+        let badge = document.createElement("span")
+        badge.classList.add("position-absolute")
+        badge.classList.add("top-0")
+        badge.classList.add("start-100")
+        badge.classList.add("translate-middle")
+        badge.classList.add("badge")
+        badge.classList.add("rounded-pill")
+        badge.classList.add("bg-danger")
+        badge.classList.add("p-2")
+        badge.innerHTML = "HOT"
+
+
+        let summerDeal = () => {
+
+            summerDeals.forEach((deal) => {
+                deal.appendChild(badge.cloneNode(true))
+            })
+            return summerDeals
+        }
+
+        summerDeal()
+        console.log(summerDeal());
+
+
+        //TRIP COUNT
+        let trips = document.querySelectorAll(".trip")
+        //window.alert(`${trips.length} trips available`)
+
+        //CARD REMOVAL
+        let cards = document.querySelectorAll(".card")
+
+        let hideCards = () => {
+            cards.forEach(card => {
+                card.style.display = 'none';
+            });
+        }
+
+        // hideCards()
+
+    </script>
+</body>
+
+</html>

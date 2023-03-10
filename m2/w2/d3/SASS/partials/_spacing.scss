@@ -1,0 +1,32 @@
+$sizes: (
+	sm: 10px,
+	normal: 16px,
+	md: 20px,
+	lg: 28px,
+	xl: 36px,
+	xxl: 48px,
+);
+
+@each $key, $value in $sizes {
+	.padding-inline-#{$key} {
+		padding-inline: $value;
+	}
+}
+
+@each $key, $value in $sizes {
+	.padding-block-#{$key} {
+		padding-block: $value;
+	}
+}
+
+@each $key, $value in $sizes {
+	.margin-inline-#{$key} {
+		margin-inline: $value;
+	}
+}
+
+@each $key, $value in $sizes {
+	.margin-block-#{$key} {
+		margin-block: $value;
+	}
+}
