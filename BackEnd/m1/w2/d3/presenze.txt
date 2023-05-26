@@ -1,0 +1,1 @@
+[Mario, 10, Luigi, 8, Wario, 18, Princess Peach, 56]

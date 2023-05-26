@@ -1,0 +1,53 @@
+package exercise;
+
+import java.time.LocalDate;
+import java.util.List;
+
+public class Order {
+	
+	private Long id; 
+	private String status;
+	private LocalDate orderDate;
+	private LocalDate deliveryDate;
+	private List<Product> products;
+	private Customer customer;
+	
+	
+	public Order(Long id, String status, LocalDate orderDate, LocalDate deliveryDate, List<Product> products, Customer customer) {
+		this.id = id;
+		this.status = status;
+		this.orderDate = orderDate;
+		this.deliveryDate = deliveryDate;
+		this.products = products;
+		this.customer = customer;
+	}
+	
+	public Long getOrderId() {
+		return id;
+	}
+	
+	public String getOrderStatus() {
+		return status;
+	}
+	
+	public LocalDate getOrderDate() {
+		return orderDate;
+	}
+	
+	public LocalDate getDeliveryDate() {
+		return deliveryDate;
+	}
+	
+	public List<Product> getOrderProducts(){
+		return products;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+	
+	@Override
+    public String toString() {
+        return ("Order " + id + " - Customer: " + customer.getCustomerName() + " - Products: " + products.toString());
+    }
+}
